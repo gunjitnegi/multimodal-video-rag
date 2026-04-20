@@ -1,0 +1,44 @@
+{
+  "youtube_id": "iESNfDRJiLs",
+  "query": "what color kurta jethalal is wearing?",
+  "relevant_chunks": [
+    {
+      "chunk_id": "vis_13",
+      "text": "[VISUAL] The image is a screenshot from an Indian television show or movie. It features a man in the center wearing traditional Indian attire with a blue patterned shirt and a dark color blazer or kurta, smiling at the camera while standing indoors. The background suggests a domestic setting, possibly a living room, with visible decorations such as wall art and a flower arrangement. There is no text present in the image to provide additional context or information about the scene or characters.",
+      "score": 0.823594331741333,
+      "start": 110,
+      "end": 120
+    },
+    {
+      "chunk_id": "vis_19",
+      "text": "[VISUAL] The image is a still from a video that features a man in the center, who appears to be mid-dance with his hands raised above him and a slight smile on his face. He's wearing a blue kurta with an orange pattern around the neckline, paired with matching pants. Behind him is a colorful display of items such as lamps and decorative objects, suggesting a festive or store setting. The environment has warm lighting and a casual atmosphere. There are no key visual elements that draw attention to any specific object or action.",
+      "score": 0.8214178085327148,
+      "start": 170,
+      "end": 180
+    },
+    {
+      "chunk_id": "vis_16",
+      "text": "[VISUAL] The image shows a person sitting at a desk, seemingly in front of a microphone and a blue screen backdrop. The individual is wearing a black cap with the brim turned upwards and a yellow top with what appears to be a checkered pattern on the left side. In the background, there's a colorful background with various elements that suggest it might be a game show or quiz set, given the presence of an audience and items typically associated with such events. The person is speaking, as suggested by their slightly open mouth, but no visible text or sign indicating what they are saying. The image has a pixelated quality to it, which could indicate that it's a low-resolution still from a video, possibly taken from a television screen displaying the scene. There are no overt diagrams or texts in this frame.",
+      "score": 0.8191350698471069,
+      "start": 140,
+      "end": 150
+    },
+    {
+      "chunk_id": "vis_10",
+      "text": "[VISUAL] The image is a still from a television show featuring two men. On the left, there is a man wearing a white uniform with a blue scarf and glasses, holding a tray of cups in his hands and looking at it with an expression that suggests surprise or concern. His attire indicates he may be a character of importance within the context of the scene, possibly a doctor or someone in authority.\n\nOn the right, there is another man dressed casually in a green shirt and a small white hat, looking up towards the man in white with an amused or puzzled expression. The setting appears to be a laboratory or a room with scientific equipment visible in the background, including test tubes and flasks on shelves. The walls are adorned with blue tiles featuring a pattern that could suggest a scientific theme.\n\nThere is no text present in the image to provide additional context about the scene or characters. The overall style of the image suggests it's a screenshot from a sitcom or drama series, designed for broadcast television.",
+      "score": 0.8186302185058594,
+      "start": 80,
+      "end": 90
+    },
+    {
+      "chunk_id": "vis_17",
+      "text": "[VISUAL] The image is a screenshot from a video featuring a person standing in front of a blue background with decorative patterns on either side. The individual appears to be male, wearing a dark vest and a blue shirt with a yellow jacket over it. He has short hair and is facing slightly away from the camera, looking towards something off-frame. His expression is neutral, and he is not interacting directly with the viewer or any object in the scene. The image does not contain any text or diagrams visible within the frame. The style of the image is indicative of a standard video capture, possibly used for thumbnails on social media platforms.",
+      "score": 0.8176106810569763,
+      "start": 150,
+      "end": 160
+    }
+  ],
+  "answer": "**Overview:** The provided context consists of screenshots and stills from an Indian television show called \"Taarak Mehta Ka Ooltah Chashmah.\" The show revolves around the daily happenings in a cooperative society named Gokuldham, with the main characters being Jethalal, Taarak Mehta, Daya, and their neighbors.\n\n**Key Takeaways:**\n\n* **Jethalal's Clothing Color:** The context does not provide specific information about the color of Jethalal's kurta in any of the given video frames [1], [2], [3], [4].\n\n* **Characters and Setting:** The show features various characters such as Jethalal, Daya, Taarak Mehta, and other neighbors living in Gokuldham Society. The setting often includes domestic interiors, laboratories, or festive/store environments [1], [2], [4].\n\n* **Visual Style:** The images are screenshots from a television show, designed for broadcast, with some frames having a pixelated quality due to low resolution [3], [4]. Some frames may also be used as thumbnails on social media platforms [5]."
+}
+
+real answer is blue color patterned kurta with orange at neckline , with white pyjama

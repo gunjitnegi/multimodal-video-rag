@@ -1,0 +1,25 @@
+# Python
+**/venv/
+**/__pycache__/
+**/*.pyc
+**/.env
+**/*.db
+**/*.db-journal
+**/logs/*.log
+
+# Node
+**/node_modules/
+**/dist/
+**/.DS_Store
+
+# Project Data (Crucial to ignore these to keep repo size small)
+**/data/videos/
+**/data/audio/
+**/data/transcripts/
+**/data/embeddings/
+**/data/frames/
+**/ollama_data/
+
+# Local OS files
+Thumbs.db
+desktop.ini

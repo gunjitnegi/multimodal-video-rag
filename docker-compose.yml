@@ -1,0 +1,38 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ./ollama_data:/root/.ollama
+    # If you have an NVIDIA GPU, uncomment lines below:
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
+
+  backend:
+    build: ./video_qa_backend
+    container_name: video_qa_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./video_qa_backend/data:/app/data
+      - ./video_qa_backend/logs:/app/logs
+    environment:
+      - OLLAMA_URL=http://ollama:11434/api/generate
+      - DATA_DIR=/app/data
+    depends_on:
+      - ollama
+
+  frontend:
+    build: ./video_qa_frontend
+    container_name: video_qa_frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend

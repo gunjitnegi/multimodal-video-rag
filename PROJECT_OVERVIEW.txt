@@ -1,0 +1,65 @@
+===========================================================
+    MULTIMODAL VIDEO QA SYSTEM - PROJECT OVERVIEW
+===========================================================
+
+1. PROJECT DESCRIPTION
+----------------------
+This is an advanced, end-to-end Video Question Answering (QA) system. It allows users to ingest YouTube videos and interact with them using an AI that "sees" and "hears" the content. The system processes both the spoken transcript (audio) and the visual frames (images) to provide factual, context-aware answers.
+
+2. KEY ACHIEVEMENTS
+-------------------
+- MULTIMODAL INTELLIGENCE: The AI can answer questions about what people said AND what they were wearing, doing, or what the environment looked like.
+- ROBUST INGESTION: Integrated yt-dlp with a multi-browser cookie fallback system to bypass YouTube's bot detection.
+- HIGH-FIDELITY VISION: Uses BakLLaVA (Vision LLM) to analyze frames at 720p resolution every 2 seconds for maximum detail.
+- HYBRID SEARCH: Combines FAISS (Semantic) and BM25 (Keyword) search for extremely accurate information retrieval.
+- SOURCE TRACING: The system provides citations and timestamps for every answer, showing exactly which frame or transcript line it used.
+- ANTI-HALLUCINATION: Implemented zero-temperature prompting and strict constraints to prevent the AI from "guessing" details not present in the video.
+
+3. TECH STACK
+-------------
+- BACKEND:
+    * FastAPI (High-performance Python web framework)
+    * SQLAlchemy (Database ORM)
+    * SQLite (Relational data storage)
+- ARTIFICIAL INTELLIGENCE:
+    * Ollama (Local LLM orchestration)
+    * Llama 3.1 8B (Primary reasoning and chat model)
+    * BakLLaVA (Multimodal Vision model)
+    * Sentence-Transformers (E5-base for high-quality embeddings)
+    * FAISS (Vector database for similarity search)
+    * OpenAI Whisper (Local audio-to-text transcription)
+- VIDEO/IMAGE PROCESSING:
+    * OpenCV (Frame extraction and analysis)
+    * yt-dlp (YouTube media extraction)
+    * FFmpeg (Audio conversion and normalization)
+- FRONTEND:
+    * React.js + Vite
+    * Lucide React (Iconography)
+    * CSS Glassmorphism (Modern, premium UI design)
+
+4. HOW TO DEPLOY
+----------------
+A. PREREQUISITES:
+   - Python 3.10+
+   - Node.js (for Frontend)
+   - FFmpeg installed in system PATH
+   - Ollama installed and running
+
+B. BACKEND SETUP:
+   1. Install dependencies: `pip install -r requirements.txt`
+   2. Pull models: `ollama pull llama3.1:8b` and `ollama pull bakllava`
+   3. Run server: `uvicorn app.main:app --reload`
+
+C. FRONTEND SETUP:
+   1. Go to frontend folder: `cd ../video_qa_frontend`
+   2. Install: `npm install`
+   3. Run: `npm run dev`
+
+D. PRODUCTION DEPLOYMENT:
+   - For production, use Docker to containerize the FastAPI backend and Nginx to serve the React frontend.
+   - For the AI part, it is recommended to host on a GPU-enabled instance (NVIDIA RTX 3060 or better) to keep the "BakLLaVA" and "Llama 3.1" models fast.
+   - If a local GPU is not available, modify 'app/core/config.py' to use Gemini Pro or OpenAI API keys for visual extraction.
+
+===========================================================
+Final Year Project - 2026
+===========================================================

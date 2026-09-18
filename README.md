@@ -67,6 +67,3 @@ The project includes a `docker-compose.yml` for simplified deployment:
 ```bash
 docker-compose up --build
 ```
-
-## 📄 License
-Final Year Project - 2026
